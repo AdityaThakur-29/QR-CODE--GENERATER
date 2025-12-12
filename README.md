@@ -50,7 +50,9 @@ project-folder/
 
 ## 📸 Screenshot
 
-*Add a screenshot here by uploading your website preview image.*
+
+<img width="1897" height="1091" alt="image" src="https://github.com/user-attachments/assets/d1074b2b-7bbf-49a4-9cab-2bfd3780cc85" />
+
 
 ---
 
