@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>QR Code Generator</h2>
+
+        <label>Choose Type:</label>
+        <select id="qrType">
+            <option value="text">Text</option>
+            <option value="url">URL</option>
+            <option value="phone">Phone Number</option>
+            <option value="email">Email</option>
+        </select>
+
+        <label>Enter Value:</label>
+        <input type="text" id="qrInput" placeholder="Enter something..." />
+
+        <div class="row">
+            <div>
+                <label>QR Color:</label>
+                <input type="color" id="qrColor" value="#000000" />
+            </div>
+            <div>
+                <label>Background:</label>
+                <input type="color" id="bgColor" value="#ffffff" />
+            </div>
+        </div>
+
+        <label>Upload Logo (Optional):</label>
+        <input type="file" id="logoUpload" accept="image/*" />
+
+        <button onclick="generateQR()">Generate QR</button>
+        <button onclick="downloadQR()">Download QR</button>
+
+        <canvas id="qrCanvas"></canvas>
+
+        <div class="footer">
+            <p>Created by Aditya</p>
+            <ul>
+                <li><a href="https://my-portfoliopot.vercel.app/">Get in touch ➤</a></li>
+                <!-- <li><a href="">GitHub</a></li>
+                <li><a href="">Twitter</a></li> -->
+            </ul>
+            
+        </div>
+    </div>
+
+    <script src="qr.js"></script>
+</body>
+
+</html>
